@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		237060E5249FFDF600E9B9F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237060E4249FFDF600E9B9F5 /* AppDelegate.swift */; };
 		237060E7249FFDF600E9B9F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237060E6249FFDF600E9B9F5 /* SceneDelegate.swift */; };
-		237060E9249FFDF600E9B9F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237060E8249FFDF600E9B9F5 /* ViewController.swift */; };
+		237060E9249FFDF600E9B9F5 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237060E8249FFDF600E9B9F5 /* HomeController.swift */; };
 		237060EC249FFDF600E9B9F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237060EA249FFDF600E9B9F5 /* Main.storyboard */; };
 		237060EE249FFDF800E9B9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237060ED249FFDF800E9B9F5 /* Assets.xcassets */; };
 		237060F1249FFDF800E9B9F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237060EF249FFDF800E9B9F5 /* LaunchScreen.storyboard */; };
+		237060FA249FFEB500E9B9F5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237060F9249FFEB500E9B9F5 /* Extensions.swift */; };
+		237060FD24A0078200E9B9F5 /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237060FC24A0078200E9B9F5 /* HomeBottomControlsStackView.swift */; };
+		237060FF24A011CA00E9B9F5 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237060FE24A011CA00E9B9F5 /* TopNavigationStackView.swift */; };
+		23A3CD2E24A4D2540089BF77 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A3CD2D24A4D2540089BF77 /* User.swift */; };
+		23B910F224A365EC0007C963 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B910F124A365EC0007C963 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		237060E1249FFDF600E9B9F5 /* tinderStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinderStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		237060E4249FFDF600E9B9F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		237060E6249FFDF600E9B9F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		237060E8249FFDF600E9B9F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		237060E8249FFDF600E9B9F5 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		237060EB249FFDF600E9B9F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		237060ED249FFDF800E9B9F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		237060F0249FFDF800E9B9F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		237060F2249FFDF800E9B9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		237060F9249FFEB500E9B9F5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		237060FC24A0078200E9B9F5 /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
+		237060FE24A011CA00E9B9F5 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
+		23A3CD2D24A4D2540089BF77 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		23B910F124A365EC0007C963 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		237060E3249FFDF600E9B9F5 /* tinderStore */ = {
 			isa = PBXGroup;
 			children = (
+				23A3CD2C24A4D2390089BF77 /* Models */,
+				237060FB24A0075600E9B9F5 /* Views */,
+				237060F8249FFE9900E9B9F5 /* Extensions */,
 				237060E4249FFDF600E9B9F5 /* AppDelegate.swift */,
 				237060E6249FFDF600E9B9F5 /* SceneDelegate.swift */,
-				237060E8249FFDF600E9B9F5 /* ViewController.swift */,
+				237060E8249FFDF600E9B9F5 /* HomeController.swift */,
 				237060EA249FFDF600E9B9F5 /* Main.storyboard */,
 				237060ED249FFDF800E9B9F5 /* Assets.xcassets */,
 				237060EF249FFDF800E9B9F5 /* LaunchScreen.storyboard */,
 				237060F2249FFDF800E9B9F5 /* Info.plist */,
 			);
 			path = tinderStore;
+			sourceTree = "<group>";
+		};
+		237060F8249FFE9900E9B9F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				237060F9249FFEB500E9B9F5 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		237060FB24A0075600E9B9F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				237060FC24A0078200E9B9F5 /* HomeBottomControlsStackView.swift */,
+				237060FE24A011CA00E9B9F5 /* TopNavigationStackView.swift */,
+				23B910F124A365EC0007C963 /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23A3CD2C24A4D2390089BF77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23A3CD2D24A4D2540089BF77 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				237060E9249FFDF600E9B9F5 /* ViewController.swift in Sources */,
+				23B910F224A365EC0007C963 /* CardView.swift in Sources */,
+				237060E9249FFDF600E9B9F5 /* HomeController.swift in Sources */,
 				237060E5249FFDF600E9B9F5 /* AppDelegate.swift in Sources */,
+				237060FD24A0078200E9B9F5 /* HomeBottomControlsStackView.swift in Sources */,
+				23A3CD2E24A4D2540089BF77 /* User.swift in Sources */,
+				237060FF24A011CA00E9B9F5 /* TopNavigationStackView.swift in Sources */,
 				237060E7249FFDF600E9B9F5 /* SceneDelegate.swift in Sources */,
+				237060FA249FFEB500E9B9F5 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
